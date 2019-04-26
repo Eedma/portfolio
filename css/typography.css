@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre|Karla');
+
+h1, h2, h3, h4, h5, h6, p {
+    text-rendering: optimizeLegibility;
+}
+h1 {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: 400;
+}
+
+#hello > h2{
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 110px;
+}
+
+#dynamic-text >h2 {
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+}
+
+#contacts{
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+}
+
+#contacts > h3{
+    padding: 2%;
+}
+
+#contacts > p {
+    padding: 1%;
+    
+}

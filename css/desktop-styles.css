@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+#main{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    align-items: center;
+    row-gap: 2%;
+    max-height: 100vh;
+}
+
+#navbar {
+    grid-column: 2 / 13;
+    grid-row: 1;
+    
+}
+
+#hello {
+    grid-column: 6 / 13;
+    grid-row: 2;
+}
+
+#dynamic-text {
+    grid-column: 6 / 13;
+    grid-row: 3;
+    align-self: baseline;
+}
+
+#contacts{
+    grid-column: 2 / auto;
+    grid-row: 4;
+    width: max-content;
+}
+
+#scroll-down{
+    grid-row : 5;
+    grid-column: 6/8;
+    justify-self: center;
+}
+
