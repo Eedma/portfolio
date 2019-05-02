@@ -31,7 +31,7 @@
 }
 
 #contacts{
-    grid-column: 2 / auto;
+    grid-column: 2 / 12;
     grid-row: 5;
     width: max-content;
 }
