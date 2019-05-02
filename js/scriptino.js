@@ -1,4 +1,4 @@
-let works = ['a developer', 'a designer', 'a photographer', 'a dreamer', 'a creative', 'a geek','a liar', 'a scientist', 'undecided', 'a pokémon trainer'];
+let works = ['a developer', 'a designer', 'a photographer', 'a dreamer', 'a creative', 'a geek', 'a scientist', 'undecided', 'a pokémon trainer'];
 let placeItems = document.getElementById('placeItems');
 let itemIndex = 0;
 

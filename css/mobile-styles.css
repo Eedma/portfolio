@@ -15,6 +15,9 @@
     #dynamic-text {
         grid-column: 1 / 13;
         margin: auto;
+        grid-row: 3;
     }
-    
+    #contacts {
+        grid-row: 5;
+    }
   }
