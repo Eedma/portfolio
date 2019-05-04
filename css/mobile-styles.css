@@ -11,6 +11,7 @@
         margin: auto;
         width: min-content;
         text-align: center;
+        white-space: normal;
     }
     
     #dynamic-text {

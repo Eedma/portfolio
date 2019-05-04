@@ -1,7 +1,9 @@
-* {
-    margin: 0;
-    border: 0;
-    padding: 0;
+#sketchPage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
 }
 
 #main{
@@ -13,6 +15,7 @@
     max-height: 100vh;
 }
 
+
 #navbar {
     grid-column: 2 / 13;
     grid-row: 1;
@@ -22,6 +25,7 @@
 #hello {
     grid-column: 5 / 12;
     grid-row: 3;
+    white-space: nowrap;
 }
 
 #dynamic-text {
