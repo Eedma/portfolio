@@ -1,3 +1,4 @@
+//animazione titolo
 let works = ['a developer', 'a designer', 'a photographer', 'a dreamer', 'a creative', 'a geek', 'using cookies', 'undecided', 'a pokémon trainer'];
 let placeItems = document.getElementById('placeItems');
 let itemIndex = 0;
@@ -14,15 +15,12 @@ shuffleInterests = () => {
 
 myInterests = () => {
     itemIndex = (itemIndex + 1) % works.length;
-
     if (itemIndex == 0) {
         shuffleInterests();
     }
-
     let item = works[itemIndex];
     placeItems.innerHTML = item;
 }
-
 
 let randomEl = setInterval(myInterests, 500);
 
@@ -33,3 +31,29 @@ start = () => {
 stop = () => {
     clearInterval(randomEl);
 }
+
+//pointer
+
+// set the starting position of the cursor outside of the screen
+let clientX = -100;
+let clientY = -100;
+const innerCursor = document.querySelector(".cursor--small");
+
+const initCursor = () => {
+  // add listener to track the current mouse position
+  document.addEventListener("mousemove", e => {
+    clientX = e.clientX;
+    clientY = e.clientY;
+  });
+  
+  // transform the innerCursor to the current mouse position
+  // use requestAnimationFrame() for smooth performance
+  const render = () => {
+    innerCursor.style.transform = `translate(${clientX}px, ${clientY}px)`;
+    
+    requestAnimationFrame(render);
+  };
+  requestAnimationFrame(render);
+};
+
+initCursor();

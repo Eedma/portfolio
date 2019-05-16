@@ -1,10 +1,22 @@
-#sketchPage {
-    position: absolute;
-    top: 0;
+.cursor {
+    position: fixed;
     left: 0;
-    z-index: -1;
-
-}
+    top: 0;
+    pointer-events: none;
+  }
+  .cursor--small {
+    width: 15px;
+    height: 15px;
+    left: -2.5px;
+    top: -2.5px;
+    border-radius: 50%;
+    z-index: 11000;
+    background-color: black;
+    /* 
+    ** non funziona blend mode
+    ** mix-blend-mode: color-burn; 
+    */
+  }
 
 #main{
     display: grid;
@@ -17,21 +29,23 @@
 
 
 #navbar {
-    grid-column: 2 / 13;
+    grid-column: 2 / 12;
     grid-row: 1;
     
 }
 
 #hello {
-    grid-column: 5 / 12;
+    grid-column: 2 / 12;
     grid-row: 3;
     white-space: nowrap;
+    justify-self: end;
 }
 
 #dynamic-text {
-    grid-column: 5 / 12;
+    grid-column: 2 / 12;
     grid-row: 4;
     align-self: baseline;
+    justify-self: end;
 }
 
 #contacts{

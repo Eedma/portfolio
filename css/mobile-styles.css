@@ -12,14 +12,19 @@
         width: min-content;
         text-align: center;
         white-space: normal;
+        justify-self: center;
     }
     
     #dynamic-text {
         grid-column: 1 / 13;
         margin: auto;
         grid-row: 3;
+        justify-self: center;
     }
     #contacts {
         padding: 2%;
+    }
+    .cursor{
+        display: none;
     }
   }
