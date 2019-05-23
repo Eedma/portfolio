@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre|Karla:400,700');
+@import url('https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre|Karla:400,700&display=swap');
 
 * {
     margin: 0;
@@ -9,6 +9,7 @@
 
 h1, h2, h3, h4, h5, h6, p {
     text-rendering: optimizeLegibility;
+    font-display: swap;
 }
 h1 {
     font-family: 'Frank Ruhl Libre', serif;

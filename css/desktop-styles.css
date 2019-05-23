@@ -42,10 +42,10 @@
 }
 
 #dynamic-text {
-    grid-column: 2 / 12;
+    grid-column: 9 / 12;
     grid-row: 4;
     align-self: baseline;
-    justify-self: end;
+    justify-self: start;
 }
 
 #contacts{

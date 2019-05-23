@@ -23,6 +23,7 @@
     }
     #contacts {
         padding: 2%;
+        grid-row: 5;
     }
     .cursor{
         display: none;
