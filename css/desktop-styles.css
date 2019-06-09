@@ -3,19 +3,21 @@
     left: 0;
     top: 0;
     pointer-events: none;
-  }
-  .cursor--small {
-    width: 15px;
-    height: 15px;
-    left: -2.5px;
-    top: -2.5px;
     border-radius: 50%;
     z-index: 11000;
-    background-color: black;
-    /* 
-    ** non funziona blend mode
-    ** mix-blend-mode: color-burn; 
-    */
+  }
+  .cursor--small {
+    width: 4px;
+    height: 4px;
+    left: 14px;
+    top: 14px;    
+    background-color: rgb(22, 20, 20);
+  }
+
+  .cursor--large {
+    width: 28px;
+    height: 28px;
+    border: 2px solid rgb(22, 20, 20);
   }
 
 #main{

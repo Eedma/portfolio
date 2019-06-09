@@ -3,21 +3,22 @@ let works = ['a developer', 'a designer', 'a photographer', 'a dreamer', 'a crea
 let placeItems = document.getElementById('placeItems');
 let itemIndex = 0;
 
-shuffleInterests = () => {
-    for (let i=0; i < 1000; ++i) {
-        let w1 = (Math.random() * works.length)|0;
-        let w2 = (Math.random() * works.length)|0;
-        let t = works[w1];
-        works[w1] = works[w2];
-        works[w2] = t;
-    }
-}
+// shuffleInterests = () => {
+//     for (let i=0; i < 1000; ++i) {
+//         let w1 = (Math.random() * works.length)|0;
+//         let w2 = (Math.random() * works.length)|0;
+//         let t = works[w1];
+//         works[w1] = works[w2];
+//         works[w2] = t;
+//     }
+// }
+//shuffler works, but IDKW!
 
 myInterests = () => {
     itemIndex = (itemIndex + 1) % works.length;
-    if (itemIndex == 0) {
-        shuffleInterests();
-    }
+    // if (itemIndex == 0) {
+    //     shuffleInterests();
+    // }
     let item = works[itemIndex];
     placeItems.innerHTML = item;
 }
@@ -38,6 +39,7 @@ stop = () => {
 let clientX = -100;
 let clientY = -100;
 const innerCursor = document.querySelector(".cursor--small");
+const outerCursor = document.querySelector(".cursor--large");
 
 const initCursor = () => {
   // add listener to track the current mouse position
@@ -50,9 +52,12 @@ const initCursor = () => {
   // use requestAnimationFrame() for smooth performance
   const render = () => {
     innerCursor.style.transform = `translate(${clientX}px, ${clientY}px)`;
+    outerCursor.style.transform = `translate(${clientX}px, ${clientY}px)`;
     
     requestAnimationFrame(render);
+    
   };
+  
   requestAnimationFrame(render);
 };
 

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre|Karla:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre|Karla:400&display=swap');
 
 * {
     margin: 0;
@@ -10,35 +10,31 @@
 h1, h2, h3, h4, h5, h6, p {
     text-rendering: optimizeLegibility;
     font-display: swap;
+    color: rgb(36, 33, 33);
 }
 h1 {
     font-family: 'Frank Ruhl Libre', serif;
     font-weight: 400;
+    font-size: 2.4rem;
+    color: black;
+}
+
+h2, #contacts{
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
 }
 
 #hello > h2{
-    font-family: 'Karla', sans-serif;
-    font-weight: 700;
     text-transform: uppercase;
     font-size: 7.1rem;
 }
 
-#dynamic-text >h2 {
-    font-family: 'Karla', sans-serif;
-    font-weight: 400;
-}
-
-#contacts{
-    font-family: 'Karla', sans-serif;
-    font-weight: 400;
-}
-
 #contacts > h3{
-    padding: 2%;
+    margin-bottom: 4%;
 }
 
 #contacts > p {
-    padding: 1%;
+    margin-bottom: 3%;
 }
 
 a:link {
