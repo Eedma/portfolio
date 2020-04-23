@@ -36,7 +36,7 @@ stop = () => {
 //pointer
 
 // set the starting position of the cursor outside of the screen
-let clientX = -100;
+/* let clientX = -100;
 let clientY = -100;
 const innerCursor = document.querySelector(".cursor--small");
 const outerCursor = document.querySelector(".cursor--large");
@@ -81,4 +81,4 @@ const initCursor = () => {
   requestAnimationFrame(render);
 };
 
-initCursor();
+initCursor(); */

@@ -5,11 +5,13 @@
     margin: 0;
     border: 0;
     padding: 0;
-    cursor: none;
+    cursor: default;
 }
 
 body{
     background-color: #f4f4f4f4;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, h6, p, a {
@@ -40,14 +42,13 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 h1 {
     /* font-family: 'Playfair Display', serif; */
-    font-family: 'Montserrat', sans-serif;
+    
     /* font-size: 2.8rem; */
     font-size: 40px;
     font-weight: 400;
 }
 
 h2, #contacts{
-    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 
 }
@@ -66,13 +67,9 @@ h2, #contacts{
     margin-bottom: 3%;
 }
 
-/* a:link {
-    color: rgb(0, 0, 0);
+a{
+    cursor: pointer !important;
 }
-
-a:visited {
-    color: rgb(0, 0, 0);
-  } */
 
 @media only screen and (max-width: 600px) {
 
