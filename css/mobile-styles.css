@@ -25,4 +25,8 @@
         justify-self: center;
     }
 
+    .cursor{
+        display: none;
+    }
+
   }
