@@ -20,3 +20,7 @@ function setup() {
     yOff += 0.01;
   }
 
+  function windowResized() {
+    resizeCanvas(windowWidth, windowHeight);
+    background(222);
+  }
