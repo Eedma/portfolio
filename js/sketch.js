@@ -1,19 +1,19 @@
 let xOff = 1;
 let yOff = 2;
+let wdth = innerWidth - 25;
 
 function setup() {
-    let cnv = createCanvas(innerWidth, innerHeight);
-    cnv.position(0,0)
+    let cnv = createCanvas(wdth, innerHeight);
+    /* cnv.position(0,0) */
     cnv.parent('sketch-holder')
-    background(222);
+    /* background(222); */
   }
   
   function draw() {
-    let xP = noise(xOff)* innerWidth;
+    let xP = noise(xOff)* wdth;
     let yP = noise(yOff)* innerHeight;
 
     // maybe a random color?!
-    stroke('black')
     point(xP,yP)
 
     xOff += 0.01;
@@ -22,5 +22,5 @@ function setup() {
 
   function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
-    background(222);
+    /* background(222); */
   }

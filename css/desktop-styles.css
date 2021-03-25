@@ -7,11 +7,6 @@
     z-index: 999;
     mix-blend-mode: exclusion;
   }
-  /* .cursor--small {
-    width: 4px;
-    height: 4px;
-    background-color: rgb(22, 20, 20);
-  } */
 
   .cursor--large {
     width: 50px;
@@ -33,7 +28,6 @@
     row-gap: 2%;
     height: auto;
 }
-
 
 #name {
     grid-column: 2 / 12;

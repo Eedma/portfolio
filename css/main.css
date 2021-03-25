@@ -9,17 +9,22 @@
 }
 
 body{
-    background-color: #f4f4f4f4;
-    /* background-color: rgb(222,222,222); */
+    background-color: rgb(222,222,222);
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 }
 
 .sketch {
     z-index: -1;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 h1, h2, h3, h4, h5, h6, p, a {
@@ -29,10 +34,10 @@ h1, h2, h3, h4, h5, h6, p, a {
     color: #212121;
 
     -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 1.6s; /* Safari 4.0 - 8.0 */
-  animation-name: example;
-  animation-duration: 1.6s;
-  animation-timing-function: ease;
+    -webkit-animation-duration: 1.6s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 1.6s;
+    animation-timing-function: ease;
 }
 
 /* Safari 4.0 - 8.0 */
