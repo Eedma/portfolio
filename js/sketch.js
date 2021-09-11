@@ -1,26 +1,31 @@
 let xOff = 1;
 let yOff = 2;
 let wdth = innerWidth - 25;
+let hgth = innerHeight;
 
 function setup() {
-    let cnv = createCanvas(wdth, innerHeight);
-    /* cnv.position(0,0) */
-    cnv.parent('sketch-holder')
-    /* background(222); */
-  }
-  
-  function draw() {
-    let xP = noise(xOff)* wdth;
-    let yP = noise(yOff)* innerHeight;
+  let cnv = createCanvas(wdth, hgth);
+  /* cnv.position(0,0) */
+  cnv.parent('sketch-holder')
+  /* background(222); */
+}
 
-    // maybe a random color?!
-    point(xP,yP)
+function draw() {
+  /* if (wdth > 1024){
+    point(mouseX, mouseY)
+  } */
 
-    xOff += 0.01;
-    yOff += 0.01;
-  }
+  let xP = noise(xOff) * wdth;
+  let yP = noise(yOff) * innerHeight;
 
-  function windowResized() {
-    resizeCanvas(windowWidth, windowHeight);
-    /* background(222); */
-  }
+  // maybe a random color?!
+  point(xP, yP)
+
+  xOff += 0.01;
+  yOff += 0.01;
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+  /* background(222); */
+}
