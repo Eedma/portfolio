@@ -56,8 +56,8 @@ const initCursor = () => {
   // use requestAnimationFrame() for smooth performance
   const render = () => {
 
-    setInterval(
-      function () {
+    
+      (function () {
 
         if (lastPositions && lastPositions.length > 0) {
 
@@ -67,8 +67,8 @@ const initCursor = () => {
           outerCursor.style.transform = `translate(${lastPosition[0]}px, ${lastPosition[1]}px)`;
 
         }
-      }, 3
-    )
+      })()
+    
 
 
     requestAnimationFrame(render);
