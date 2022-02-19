@@ -32,7 +32,7 @@
 #name {
     grid-column: 2 / 12;
     grid-row: 1;
-    
+    justify-self: center;
 }
 
 #hello {
@@ -43,10 +43,10 @@
 }
 
 #dynamic-text {
-    grid-column: 9 / 12;
+    grid-column: 2 / 12;
     grid-row: 4;
     align-self: baseline;
-    justify-self: start;
+    justify-self: center;
 }
 
 .flex-container{

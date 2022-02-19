@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-/* rimuovere playfair?! */
 * {
     margin: 0;
     border: 0;
@@ -32,7 +31,6 @@ h1, h2, h3, h4, h5, h6, p, a {
     -webkit-font-smoothing: antialiased;
     /* font-display: swap; */
     color: #212121;
-
     -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 1.6s; /* Safari 4.0 - 8.0 */
     animation-name: example;
@@ -54,11 +52,12 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 
 h1 {
-    /* font-family: 'Playfair Display', serif; */
-    
-    /* font-size: 2.8rem; */
-    font-size: 40px;
+    font-size: 2.4rem;
     font-weight: 400;
+}
+
+h2 {
+    text-align: center;
 }
 
 h2, #contacts{

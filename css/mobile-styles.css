@@ -4,10 +4,11 @@
         grid-column: 1/13;
         justify-self: center;
     }
-  
-    #main{
+
+    #main {
         grid-template-rows: repeat(3, 1fr);
     }
+
     #hello {
         grid-column: 1 / 13;
         grid-row: 2;
@@ -17,7 +18,7 @@
         white-space: normal;
         justify-self: center;
     }
-    
+
     #dynamic-text {
         grid-column: 1 / 13;
         margin: auto;
@@ -25,8 +26,8 @@
         justify-self: center;
     }
 
-    .cursor{
+    .cursor {
         display: none;
     }
 
-  }
+}

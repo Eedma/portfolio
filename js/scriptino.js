@@ -22,10 +22,10 @@ myInterests = () => {
   placeItems.innerHTML = item;
 }
 
-let randomEl = setInterval(myInterests, 500);
+let randomEl = setInterval(myInterests, 1000);
 
 start = () => {
-  randomEl = setInterval(myInterests, 500);
+  randomEl = setInterval(myInterests, 1000);
 }
 
 stop = () => {
@@ -54,9 +54,7 @@ const initCursor = () => {
 
   // transform the innerCursor to the current mouse position
   // use requestAnimationFrame() for smooth performance
-  const render = () => {
-
-    
+  const render = () => {    
       (function () {
 
         if (lastPositions && lastPositions.length > 0) {
@@ -69,12 +67,8 @@ const initCursor = () => {
         }
       })()
     
-
-
     requestAnimationFrame(render);
-
   };
-
   requestAnimationFrame(render);
 };
 
