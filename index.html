@@ -1,83 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Portfolio</title>
-    <meta name="author" content="Edoardo Marzorati">
-    <meta name="description" content="Hello stranger this is my personal portfolio">
-    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/desktop-styles.css">
-    <link rel="stylesheet" href="./css/mobile-styles.min.css">
-</head>
+    <meta name="author" content="Edoardo Marzorati" />
+    <meta
+      name="description"
+      content="Hello stranger this is my personal portfolio, I'll be adding new stuff from time to time"
+    />
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/desktop-styles.css" />
+    <link rel="stylesheet" href="./css/mobile-styles.css" />
+  </head>
 
-<body>
+  <body>
     <div class="cursor cursor--large"></div>
-    
     <div id="sketch-holder" class="sketch"></div>
 
     <div id="main">
-        <div id="name">
-            <h1>Edoardo Marzorati</h1>
-            <h2>portfolio</h2>
-        </div>
-        <div id="hello">
-            <h2>hello world!</h2>
-        </div>
-        <div id="dynamic-text">
-            <h2>I am <span id='placeItems' onmouseenter="stop()" onmouseleave="start()"></span></h2>
-        </div>
+      <div id="name">
+        <h1>Edoardo Marzorati</h1>
+        <h2>portfolio</h2>
+      </div>
+      <div id="hello">
+        <h2>hello world!</h2>
+      </div>
+      <div id="dynamic-text">
+        <h2>
+          I am
+          <span
+            id="placeItems"
+            onmouseenter="stop()"
+            onmouseleave="start()"
+          ></span>
+        </h2>
+      </div>
     </div>
 
     <div class="flex-container">
-        <section>
-            <div class="flex-container-title">
-                <h3>Projects</h3>
-            </div>
-            <article>
-                <h4><a href="https://asteroids.pieinthesky.space"  target="_blank">asteroids</a></h4>
-                <p>the arcade game asteroids reinvented for web browser (mobile not supported)</p>
-                <p>still buggy, but it's work in progress</p>
-                <p>powered by webpack, netlify and fauna db</p>
-            </article>
-            <article>
-                <h4><a href="https://trivial.netlify.app" target="_blank">trivial</a></h4>
-                <p>trivial is a game quiz</p>
-                <p>having fun is definitly the best way ever to learn a new technology</p>
-                <p>powered by angular, opentdb API and netlify</p>
-            </article>
-            <article>
-                <h4><a href="https://oldie.pieinthesky.space" target="_blank">pieinthesky.space</a></h4>
-                <p>this is a crazy project I've created for cfp Bauer graduation back in 2018</p>
-                <p>powered by too many coffees and some jQuery (please don't judge me)</p>
-            </article>
-        </section>
+      <section>
+        <div class="flex-container-title">
+          <h4>Side Projects</h4>
+        </div>
+        <article>
+          <h4>
+            <a href="https://asteroids.pieinthesky.space" target="_blank"
+              >asteroids</a
+            >
+          </h4>
+          <p>
+            the arcade game asteroids reinvented for web browser (mobile not
+            supported)
+          </p>
+          <p>still buggy, but it's work in progress</p>
+          <p>powered by webpack, netlify and fauna db</p>
+        </article>
+        <article>
+          <h4>
+            <a href="https://trivial.netlify.app" target="_blank">trivial</a>
+          </h4>
+          <p>trivial is a game quiz</p>
+          <p>
+            having fun is definitly the best way ever to learn a new technology
+          </p>
+          <p>powered by angular, opentdb API and netlify</p>
+        </article>
+        <article>
+          <h4>
+            <a href="https://oldie.pieinthesky.space" target="_blank"
+              >pieinthesky.space</a
+            >
+          </h4>
+          <p>
+            this is a crazy project I've created for cfp Bauer graduation back
+            in 2018
+          </p>
+          <p>
+            powered by too many coffees and some jQuery (please don't judge me)
+          </p>
+        </article>
+      </section>
     </div>
 
     <div class="flex-container">
-        <section>
-            <article id="social-links">
-                <p>ed.marzorati[at]gmail.com</p>
-                <p><a href="https://github.com/Eedma" target="_blank">github</a></p>
-                <p><a href="https://www.linkedin.com/in/edoardo-marzorati-438ab5174/" target="_blank">linkedin</a></p>
-            </article>
-        </section>
+      <section>
+        <article id="social-links">
+          <p>ed.marzorati[at]gmail.com</p>
+          <p><a href="https://github.com/Eedma" target="_blank">github</a></p>
+          <p>
+            <a
+              href="https://www.linkedin.com/in/edoardo-marzorati-438ab5174/"
+              target="_blank"
+              >linkedin</a
+            >
+          </p>
+        </article>
+      </section>
     </div>
-    
+
     <!-- end of main -->
     <script src="./js/scriptino.js"></script>
-    <script async src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.3.0/p5.min.js" integrity="sha512-tGZFF1kxT/c9C+kv77mKkZ9Ww1VyU8TMX6HLUSzbPrDLuptbiRFBfti8A33ip+BBIHYUsybuZD9OKLmIqdLmaQ==" crossorigin="anonymous"></script>
+    <script
+      async
+      src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.3.0/p5.min.js"
+      integrity="sha512-tGZFF1kxT/c9C+kv77mKkZ9Ww1VyU8TMX6HLUSzbPrDLuptbiRFBfti8A33ip+BBIHYUsybuZD9OKLmIqdLmaQ=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/sketch.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139428539-1"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-139428539-1"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-139428539-1');
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-139428539-1");
     </script>
-</body>
+  </body>
 </html>

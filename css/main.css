@@ -1,91 +1,113 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
-* {
-    margin: 0;
-    border: 0;
-    padding: 0;
-    cursor: default;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  color: #ffffff;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 1.6s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 1.6s;
+  animation-timing-function: ease;
 }
-
-body{
-    background-color: rgb(222,222,222);
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-}
-
-.sketch {
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-}
-
-h1, h2, h3, h4, h5, h6, p, a {
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    /* font-display: swap; */
-    color: #212121;
-    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 1.6s; /* Safari 4.0 - 8.0 */
-    animation-name: example;
-    animation-duration: 1.6s;
-    animation-timing-function: ease;
-}
-
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes example {
-    from {opacity: 0}
-    to {opacity: 1}
-  }
-  
-  /* Standard syntax */
-  @keyframes example {
-    from {opacity: 0;}
-    to {opacity: 1;}
-  }
-
 
 h1 {
-    font-size: 2.4rem;
-    font-weight: 400;
+  font-size: 2.4rem;
+  font-weight: 400;
 }
 
 h2 {
-    text-align: center;
+  text-align: center;
+  font-weight: 400;
 }
 
-h2, #contacts{
-    font-weight: 400;
-
+#hello > h2 {
+  text-transform: uppercase;
+  font-size: 7.1rem;
+  font-weight: 400;
 }
 
-#hello > h2{
-    text-transform: uppercase;
-    font-size: 7.1rem;
-}
-
-#contacts > h3{
-    margin-bottom: 4%;
-    font-weight: 700;
-}
-
-#contacts > p {
-    margin-bottom: 3%;
-}
-
-a{
-    cursor: pointer !important;
+a {
+  cursor: pointer !important;
 }
 
 @media only screen and (max-width: 600px) {
+  #hello > h2 {
+    font-size: 5rem;
+  }
+}
 
-    #hello > h2 {
-        font-size: 5rem;
-    }
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  cursor: default;
+}
+
+body {
+  background-color: #131112;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.sketch {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/*  custom scrollbar */
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #60656f;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f7f7ff;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #f7f7ff;
+}
+
+/* page transitioning */
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Standard syntax */
+@keyframes example {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

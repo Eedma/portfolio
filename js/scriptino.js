@@ -54,19 +54,20 @@ const initCursor = () => {
 
   // transform the innerCursor to the current mouse position
   // use requestAnimationFrame() for smooth performance
-  const render = () => {    
-      (function () {
+  const render = () => {
+    (function () {
 
-        if (lastPositions && lastPositions.length > 0) {
+      if (lastPositions && lastPositions.length > 0) {
 
-          let lastPosition = lastPositions[0];
-          lastPositions = lastPositions.slice(1);
+        let lastPosition = lastPositions[0];
+        lastPositions = lastPositions.slice(1);
 
-          outerCursor.style.transform = `translate(${lastPosition[0]}px, ${lastPosition[1]}px)`;
+        outerCursor.style.transform = `translate(${lastPosition[0]}px, ${lastPosition[1]}px)`;
+        outerCursor.style.transition = 'transform 100ms ease-out';
 
-        }
-      })()
-    
+      }
+    })()
+
     requestAnimationFrame(render);
   };
   requestAnimationFrame(render);
